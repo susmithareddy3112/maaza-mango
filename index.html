@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropica Mango | Premium Refreshment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TROPICA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#flavors">Flavors</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="btn-primary buy-btn">Buy Now</button>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="video-container">
+            <canvas id="hero-video-canvas"></canvas>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>The Ultimate <br><span class="highlight">Mango Experience</span></h1>
+            <p>Taste the bold, juicy, and vibrant flavors of freshly picked alphonso mangoes infused with sparkling refreshment.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="document.getElementById('flavors').scrollIntoView({behavior: 'smooth'})">Explore Flavors</button>
+                <button class="btn-secondary watch-btn">Watch Video</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="flavors" class="gallery">
+        <div class="gallery-header">
+            <h2>Crafted for <span class="highlight">Every Vibe</span></h2>
+            <p>Explore our different styles and pick your perfect aesthetic.</p>
+        </div>
+        
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/luxury_brand_look_1779011190832.png" alt="Luxury Mango Drink">
+                </div>
+                <div class="card-info">
+                    <h3>Luxury Gold</h3>
+                    <p>Minimal. Elegant. For those who appreciate high-end refreshment.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/fun_gen_z_style_1779011223381.png" alt="Fun Gen-Z Mango Soda">
+                </div>
+                <div class="card-info">
+                    <h3>Neon Pop</h3>
+                    <p>Playful, vibrant gradients and fizzy bubbles to boost your energy.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/fresh_natural_style_1779011234673.png" alt="Fresh Organic Mango Drink">
+                </div>
+                <div class="card-info">
+                    <h3>Organic Fresh</h3>
+                    <p>Farm-fresh natural sunlight vibes, pure and healthy.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="assets/frozen_chill_style_1779011256726.png" alt="Frozen Mango Beverage">
+                </div>
+                <div class="card-info">
+                    <h3>Sub-Zero Chill</h3>
+                    <p>Explosive frost and condensation for maximum summer cooling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Our <span class="highlight">Story</span></h2>
+            <p>At Tropica, we believe in the pure, unadulterated taste of nature. We source only the finest Alphonso mangoes from local farmers, ensuring every drop of our beverage is bursting with authentic, refreshing flavor. It's not just a drink; it's a tropical escape.</p>
+            <button class="btn-primary buy-btn" style="margin-top: 1.5rem;">Order Your Pack</button>
+        </div>
+        <div class="about-image">
+            <img src="assets/main_mango_beverage_1779011159598.png" alt="Fresh Mangoes">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2 class="logo">TROPICA</h2>
+            <p>&copy; 2026 Tropica Beverages. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Actions -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Action Required</h2>
+            <div id="modal-body">Details will appear here.</div>
+            <div id="modal-footer" style="margin-top: 1rem;">
+                <!-- Action buttons will be injected here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
